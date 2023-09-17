@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+        <%- include('../partials/background'); %>
+        <div class="wrapper">
+            <header id="up">
+                <%- include('../partials/header'); %>
+            </header>
+            <div class="moveObj"></div>
+            <div class="window forms areaForm">
+                <div class="back"></div>
+                <div class="body">
+                    <div class="forms">
+                        <form class="items" id="area">
+                            <h2>Area settings</h2>
+                            <div>
+                                <select name="items">
+                                    <option value="width">Width</option>
+                                    <option value="height">Height</option>
+                                    <option value="margin">Margin</option>
+                                    <option value="padding">Padding</option>
+                                </select>
+                                <button>Add</button>
+                            </div>
+                        </form>
+                        <form class="itemsSettings">
+                            <ul>
+                                <li cssSelector="width">
+                                    <p>Width:</p>
+                                    <div>
+                                        <input type="number" name="widthValue">
+                                        <select name="widthMark" id="widthMark">
+                                            <option value="%">%</option>
+                                            <option value="px">px</option>
+                                            <option value="vw">vw</option>
+                                            <option value="vh">vh</option>
+                                            <option value="vmin">vmin</option>
+                                            <option value="vmax">vmax</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <input type="number" name="widthValue">
+                                        <select name="widthMark" id="widthMark">
+                                            <option value="%">%</option>
+                                            <option value="px">px</option>
+                                            <option value="vw">vw</option>
+                                            <option value="vh">vh</option>
+                                            <option value="vmin">vmin</option>
+                                            <option value="vmax">vmax</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <input type="number" name="widthValue">
+                                        <select name="widthMark" id="widthMark">
+                                            <option value="%">%</option>
+                                            <option value="px">px</option>
+                                            <option value="vw">vw</option>
+                                            <option value="vh">vh</option>
+                                            <option value="vmin">vmin</option>
+                                            <option value="vmax">vmax</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <input type="number" name="widthValue">
+                                        <select name="widthMark" id="widthMark">
+                                            <option value="%">%</option>
+                                            <option value="px">px</option>
+                                            <option value="vw">vw</option>
+                                            <option value="vh">vh</option>
+                                            <option value="vmin">vmin</option>
+                                            <option value="vmax">vmax</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="formFunc">
+                                        <img src="imgs/other/IconDeleteStyle.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                            <button>Edit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <aside>
+                    <%- include('../partials/asideTabs'); %>
+                    <div class="path">
+                        <h3>Path:</h3>
+                        <div class="btns"></div>
+                    </div>
+                </aside>
+
+                <main>
+                    <section class="section ChangeableSection" in="true">
+                        <p class="placeholder">Section</p>
+                    </section>
+                </main>
+                
+                <aside>
+                    <div class="previewsObjs">
+                        <section class="section ViewSection" in="true">
+                            <p class="placeholder">Section</p>
+                        </section>
+                        <div class="area ViewArea" in="true">
+                            <p class="placeholder">area</p>
+                        </div>
+                        <div class='slider ViewSlider' show='1' scroll='1' time='1000' in="true">
+                            <p class="placeholder">Slider</p>
+                            <ul>
+                                <li><a href='' data-lightbox=''><div class='img_slider' style='background-image: url();'></div></a></li>
+                            </ul>
+                        </div>
+                        <div class="displayProject ViewDisplayProject" in="false">
+                            <p class="placeholder">ProjectFrame</p>
+                            <iframe src="" frameborder="0">
+                            
+                            </iframe>
+                            <div class="buttons">
+                                <p projectSrc="">Start/Restart</p>
+                                <p>Stop</p>
+                            </div>
+                        </div>
+                        <div class="topic ViewTopic" in="true">
+                            <h2></h2>
+                            <p></p>
+                            <p class="placeholder">topic</p>
+                        </div>
+                        <div class="img ViewImg" in="false">
+                            <a href="" data-lightbox="" data-title="">
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="downloadBtn" in="false">
+                            <a href="">DownloadBtn</a>
+                        </div>
+                        <div class="Btn smallBtn" in="false">
+                            <div class="hexBorder">
+                                <div class="hexBody">
+                                    <p>smallBtn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Btn mediumBtn" in="false">
+                            <div class="hexBorder">
+                                <div class="hexBody">
+                                    <p>mediumBtn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Btn bigBtn" in="false">
+                            <div class="hexBorder">
+                                <div class="hexBody">
+                                    <p>bigBtn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Btn largeBtn" in="false">
+                            <div class="hexBorder">
+                                <div class="hexBody">
+                                    <p>LargeBtn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="SaveContent">
+                            
+                    </div>
+                    <!-- <div class="options">
+                        <div class="anchors">
+                            <img src="imgs/background/up.png" alt="" class="up">
+                            <img src="imgs/background/down.png" alt="" class="down">
+                        </div>
+                        <div class="colors">
+                            <h4 id="btn_color">Background color</h4>
+                            <div class="opt">
+                                <p class="color" id="1">Blue</p>
+                                <p class="color" id="2">Red</p>
+                                <p class="color" id="3">Yellow</p>
+                                <p class="color" id="4">Green</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </aside>
+            </div>
+            
+            <%- include('../partials/footer'); %>
+        </div>
+    </body>
+</html>

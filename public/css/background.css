@@ -1,0 +1,38 @@
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: -5;
+}
+@keyframes lightMover {
+    0%{left: -90%;}
+    100%{left: 100%;}
+}
+.background > .back{
+    background-image: url(../imgs/background/light1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: lightMover 40s infinite linear;
+}
+@keyframes blackout {
+    0%{background-color: rgba(8, 8, 8, 1);}
+    35%{background-color: rgba(8, 8, 8, 0.2);}
+    75%{background-color: rgba(8, 8, 8, 1);}
+    100%{background-color: rgba(8, 8, 8, 1);}
+}
+.background > .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../imgs/background/front.png);
+    background-size: cover;
+    background-color: rgba(8, 8, 8, 0);
+    animation: blackout 10s infinite linear;
+}

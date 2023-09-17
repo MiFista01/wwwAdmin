@@ -1,0 +1,298 @@
+body{
+    margin: 0px;
+    font-family: 'Righteous', cursive;
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* боковые блоки с лева и с право */
+aside{
+    width: 15%;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* боковые блоки с лева и с право */
+
+/* блок который даёт обьекты ддля перемещения */
+.previewsObjs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 80vh;
+    overflow-y: scroll;
+}
+.previewsObjs::-webkit-scrollbar{
+    display: none;
+}
+/* блок который даёт обьекты ддля перемещения */
+
+/* основной блок для тем */
+section{
+    box-sizing: border-box;
+    position: relative;
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+section .pageTopic h2{
+    font-size: 4.5vmin !important;
+}
+section .pageTopic p{
+    font-size: 3vmin !important;
+}
+section > *{
+    z-index: 1;
+}
+/* основной блок для тем */
+
+/* блок в который клонируется обьект для перемещения */
+.moveObj{
+    width: 65vw;
+    height: 0px;
+}
+.moveObj > *{
+    position: absolute !important;
+    z-index: 2;
+    max-width: 65vw;
+    pointer-events: none;
+}
+/* блок в который клонируется обьект для перемещения */
+
+/* блок в обьектах который показывает боковые ориентирыи кнопки для работы с обьектами */
+.functions{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    z-index: 0 !important;
+}
+    /* блок в обьектах который показывает боковые ориентирыи кнопки для работы с обьектами */
+
+/* "p" для показа названия блока */
+.placeholder{
+    position: absolute;
+    top: 35%;
+    color: #3d3d3d;
+    width: 100% !important;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px;
+    user-select: none;
+    z-index: -1 !important;
+}
+/* "p" для показа названия блока */
+
+/* ориентиры для вставки обьектов до или после родителя */
+.topHR, .downHR, .leftHR, .rightHR{
+    margin: 0px;
+}
+.topHR, .downHR{
+    width: 100%;
+    height: 8px;
+    border-radius: 2px;
+    border: none;
+    position: absolute;
+    background-color: rgba(0, 94, 255, 0.35);
+    box-shadow: 0px 0px 2px 2px rgba(0, 94, 255, 0.35);
+    transition-duration: 0.1s;
+}
+.topHR{
+    top: 0px;
+    left: 0px;
+}
+.downHR{
+    bottom: 0px;
+    left: 0px;
+}
+.leftHR, .rightHR{
+    height: 100%;
+    width: 8px;
+    border-radius: 2px;
+    border: none;
+    position: absolute;
+    background-color: rgba(0, 94, 255, 0.35);
+    box-shadow: 0px 0px 2px 2px rgba(0, 94, 255, 0.35);
+    transition-duration: 0.1s;
+}
+.leftHR{
+    top: 0px;
+    left: 0px;
+}
+.rightHR{
+    top: 0px;
+    right: 0px;
+}
+.topHR:hover, .downHR:hover, .leftHR:hover, .rightHR:hover{
+    background-color: rgba(0, 94, 255, 0.45);
+    box-shadow: 0px 0px 4px 4px rgba(0, 94, 255, 0.45);
+}
+/* ориентиры для вставки обьектов до или после родителя */
+
+
+/* блок для кнопок у обьектов */
+.btns{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.btns img{
+    width: 2vmax;
+    cursor: pointer;
+    z-index:  2;
+}
+/* блок для кнопок у обьектов */
+
+/* изменения класса слайдера с библиотеки "slider" */
+.slider{
+    position: relative;
+}
+.slider ul{
+    min-width: 50%;
+}
+/* изменения класса слайдера с библиотеки "slider" */
+
+/* изменение тегов для формы изменения свойств обьектов */
+.forms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.items{
+    display: flex;
+    align-items: end;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+.items *{
+    font-family: 'Righteous', cursive;
+}
+.items h2{
+    margin: 0px;
+    font-size: 5vmin;
+    margin-right: 5vmin;
+    margin-bottom: -15px;
+}
+.items > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.items select{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2.5vmin;
+    cursor: pointer;
+    margin-right: 2vmin;
+}
+.items button{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 2vmin;
+    cursor: pointer;
+}
+.itemsSettings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.itemsSettings *{
+    font-family: 'Righteous', cursive;
+}
+.itemsSettings ul{
+    list-style: none;
+    padding: 0px;
+}
+.itemsSettings li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+}
+.itemsSettings li p{
+    margin: 0px;
+    font-size: 3vmin;
+}
+.itemsSettings li > div{
+    width: 20%;
+    display: flex;
+    margin-right: 10px;
+}
+.itemsSettings input{
+    width: 50%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 3vmin;
+    margin: 0px;
+    padding: 0px;
+}
+.itemsSettings input[type="number"]::-webkit-inner-spin-button,
+.itemsSettings input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.itemsSettings input[type="number"] {
+    -moz-appearance: textfield; /* Убедитесь, что стрелки скрыты в Firefox */
+}
+.itemsSettings select{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 3vmin;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+}
+.itemsSettings .formFunc{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: min-content !important;
+}
+.itemsSettings .formFunc img{
+    width: 5vmin;
+    cursor: pointer;
+}
+.itemsSettings button{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 3vmin;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+}
+/* изменение тегов для формы изменения свойств обьектов */
+

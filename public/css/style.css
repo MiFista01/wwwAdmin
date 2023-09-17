@@ -1,0 +1,13 @@
+.content{
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-grow: 1;
+}
+main{
+    width: 65%;
+    min-height: 50vh;
+}
+

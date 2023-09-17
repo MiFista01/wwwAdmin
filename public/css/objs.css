@@ -1,0 +1,233 @@
+.previewsObjs > *{
+    cursor: pointer;
+    user-select: none !important;
+    font-size: 2.5vmin !important;
+    margin-bottom: 1vmin !important;
+    z-index: 2;
+}
+
+/* стили для представления обьектов */
+.previewsObjs > .Btn{
+    width: 6.3vw !important;
+    height: 6.3vw !important;
+}
+.previewsObjs > .ViewSection {
+    border: 5px dashed #3d3d3d;
+    min-height: 15vh;
+    width: 100% !important;
+}
+.previewsObjs > .ViewSection .placeholder{
+    font-size: 3vmin !important;
+}
+.previewsObjs > .area{
+    min-width: 0px !important;
+}
+.previewsObjs > .ViewArea, .previewsObjs > .ViewSlider, .previewsObjs > .ViewDisplayProject{
+    border: 3px dashed #3d3d3d;
+    min-height: auto;
+    height: 10vh !important;
+    width: 100% !important;
+}
+.previewsObjs .ViewDisplayProject iframe, .previewsObjs .ViewDisplayProject > .buttons{
+    visibility: hidden;
+}
+.previewsObjs > .ViewArea .placeholder{
+    font-size: 2.5vmin !important;
+}
+.previewsObjs > .ViewTopic{
+    border: 3px dashed #3d3d3d;
+    min-height: 7vh;
+}
+.previewsObjs > .ViewTopic .placeholder{
+    font-size: 2vmin !important;
+}
+.previewsObjs > .ViewImg{
+    border: 3px dashed #3d3d3d;
+    min-height: 10vh !important;
+    width: 100% !important;
+}
+.previewsObjs > .ViewDownloadBtn a{
+    font-size: 2.5vmin !important;
+}
+/* стили для представления обьектов */
+
+
+/* стили для изменяемых обьектов */
+.ChangeableTopic, .ViewTopic{
+    border: 5px dashed #3d3d3d;
+    background-color: #31313137;
+    border-radius: 20px;
+}
+.ChangeableTopic p{
+    font-size: 4vmin !important;
+}
+.ChangeableSection, .ViewSection{
+    border: 10px dashed #3d3d3d;
+    border-radius: 20px;
+    background-color: #31313137;
+}
+.ChangeableSection > .placeholder{
+    font-size: 8vmin;
+}
+.ChangeableArea, .ViewArea, .ChangeableSlider, .ViewSlider, .ChangeableDisplayProject, .ViewDisplayProject{
+    border: 5px dashed #3d3d3d;
+    background-color: #31313137;
+    border-radius: 20px;
+    min-height: 15vw;
+    min-width: 10vw;
+    flex-shrink: 0;
+}
+.ChangeableArea > .placeholder{
+    font-size: 4vmin;
+}
+.ChangeableImg, .ViewImg{
+    border: 8px dashed #151515;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e4e4e4d1;
+    background-image: url("../imgs/other/img.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 15vmin;
+    min-height: 15vmin;
+}
+/* стили для изменяемых обьектов */
+
+
+/* основные стили самих обьектов для обычного юзера */
+.area{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-grow: 2;
+}
+.displayProject{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.displayProject iframe{
+    min-width: 15vw;
+    min-height: 15vw;
+    background-color: #151515;
+}
+.displayProject > .buttons p{
+    cursor: pointer;
+}
+.topic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    margin-bottom: 2vmin;
+    min-height: 10vh;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.topic h2{
+    font-size: 6.5vmin;
+    margin: 0px;
+    width: 100%;
+}
+.topic p{
+    font-size: 3.5vmin;
+    margin: 0px;
+    width: 100%;
+}
+.img{
+    width: 40%;
+    margin: 0% 1%;
+    margin-bottom: 2vmin;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.downloadBtn{
+    height: max-content;
+}
+.downloadBtn a{
+    padding: 1.5vmin 4vmin;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    font-size: 3vmin;
+    background-color: whitesmoke;
+    width: auto;
+    display: inline-block;
+    transition-duration: 0.2s;
+}
+.downloadBtn a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+.Btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.smallBtn{
+    width: 7.5vw;
+    height: 7.5vw;
+    font-size: 2.5vmin;
+}
+.mediumBtn{
+    width: 10vw;
+    height: 10vw;
+    font-size: 3vmin;
+}
+.bigBtn{
+    width: 15vw;
+    height: 15vw;
+    font-size: 4vmin;
+}
+.largeBtn{
+    width: 20vw;
+    height: 20vw;
+    font-size: 5vmin;
+}
+.hexBorder{
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(181, 181, 181);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(0% 25%,50% 0%,100% 25%,100% 75%,50% 100%,0% 75%);
+    -moz-clip-path: polygon(5% 50%, 25% 5%, 75% 5%, 100% 50%, 75% 100%, 25% 100%);
+    transition-duration: 0.4s;
+}
+.hexBody {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(0% 25%,50% 0%,100% 25%,100% 75%,50% 100%,0% 75%);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+/* основные стили самих обьектов для обычного юзера */
